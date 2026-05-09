@@ -1,29 +1,73 @@
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git init
-Reinitialized existing Git repository in E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/.git/
+Initialized empty Git repository in E:/MURALI/REACT-JS-CRASH-COURSE/figma-react/.git/
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'eslint.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/icons.svg', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/App copy.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/assets/vite.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config copy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "Initial commit"
-[main a4754a0] Initial commit
- 33 files changed, 4846 insertions(+), 735 deletions(-)
+[master (root-commit) 7eef859] Initial commit
+ 100 files changed, 13332 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 SCREENS/DEPLOY-1.png
+ create mode 100644 SCREENS/DEPLOY-2.png
+ create mode 100644 SCREENS/DEPLOY-3.png
+ create mode 100644 SCREENS/DEPLOY-4.png
+ create mode 100644 SCREENS/DEPLOY-CHATGPT-STEPS.txt
+ create mode 100644 SCREENS/DEPLOY-RENDER-COM.txt
+ create mode 100644 SCREENS/DEPLOY-STEPS.png
+ create mode 100644 SCREENS/DEPLOYMENT-STEPS-OUTPUT.txt
+ create mode 100644 SCREENS/DEPLOYMENT-STEPS.txt
+ create mode 100644 SCREENS/DESIGN-FIGMA-TEMPLATE.txt
+ create mode 100644 SCREENS/INFO.txt
  create mode 100644 SCREENS/NOTE.txt
  create mode 100644 SCREENS/RESPONSIVENESS-REASON.png
  create mode 100644 SCREENS/RESPONSIVENESS-REASON.txt
+ create mode 100644 SCREENS/RULES-MORE.txt
+ create mode 100644 SCREENS/RULES.txt
+ create mode 100644 SCREENS/STEPS.txt
+ create mode 100644 SCREENS/SVG.txt
  create mode 100644 SCREENS/TRAVEL-APP-2-NOTES.txt
  create mode 100644 SCREENS/VALUES FOR CONVERTER.txt
- delete mode 100644 figma-react-30-04-2026.zip
+ create mode 100644 SCREENS/figma_to_react.pdf
+ create mode 100644 SCREENS/vector.txt
+ create mode 100644 eslint.config.js
+ create mode 100644 index.html
+ create mode 100644 jsconfig.json
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
  create mode 100644 public/assets/Home-Page-2.png
+ create mode 100644 public/assets/Vector2.svg
+ create mode 100644 public/assets/aerial-view-blue-sea-boat-1.png
+ create mode 100644 public/assets/image-2.png
+ create mode 100644 public/assets/image-3.png
+ create mode 100644 public/assets/unsplash_GNdp2Q4VZjw.jpg
+ create mode 100644 public/assets/unsplash_MdTtpxGlrz8.jpg
+ create mode 100644 public/assets/unsplash_rC2_aH8lAlU.jpg
+ create mode 100644 public/favicon.svg
+ create mode 100644 public/icons.svg
  create mode 100644 src/App copy.jsx
- delete mode 100644 src/AwesomeComponent copy.jsx
+ create mode 100644 src/App.css
+ create mode 100644 src/App.jsx
+ create mode 100644 src/AwesomeComponent.jsx
  create mode 100644 src/FigmaConverter.jsx
  create mode 100644 src/FigmaConverterNew.jsx
  create mode 100644 src/FigmaToReactAutoSmart.jsx
- delete mode 100644 src/FigmaToReactConverter copy.jsx
+ create mode 100644 src/FigmaToReactConverter.jsx
  create mode 100644 src/FigmaToReactConverterNew.jsx
  create mode 100644 src/FigmaToReactConverterResponsive.jsx
  create mode 100644 src/PxToResponsiveConverter.jsx
@@ -31,6 +75,8 @@ E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "Initial commit"
  create mode 100644 src/ResponsiveLayout-BCKUP.jsx
  create mode 100644 src/ResponsiveLayout.jsx
  create mode 100644 src/TailwindResponsiveConverter.jsx
+ create mode 100644 src/Test.jsx
+ create mode 100644 src/TestComp.jsx
  create mode 100644 src/TestConverter.jsx
  create mode 100644 src/TravelApp2.css
  create mode 100644 src/TravelApp2.jsx
@@ -39,26 +85,60 @@ E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "Initial commit"
  create mode 100644 src/TravelApp4.jsx
  create mode 100644 src/TravelApp5.jsx
  create mode 100644 src/UniversalFigmaConverter.jsx
+ create mode 100644 src/Vector2.jsx
+ create mode 100644 src/assets/hero.png
+ create mode 100644 src/assets/react.svg
+ create mode 100644 src/assets/vite.svg
+ create mode 100644 src/components/AccommodationDropdown.jsx
+ create mode 100644 src/components/Background/Boat.jsx
+ create mode 100644 src/components/Background/SandOverlay.jsx
+ create mode 100644 src/components/Background/Waves.jsx
+ create mode 100644 src/components/Cards/CardList.jsx
+ create mode 100644 src/components/Cards/CardsSection.jsx
+ create mode 100644 src/components/Cards/DestinationCard.jsx
+ create mode 100644 src/components/Cards/SectionHeader.jsx
+ create mode 100644 src/components/DatePickerInput.jsx
+ create mode 100644 src/components/Details/BookingCard.jsx
+ create mode 100644 src/components/Details/DetailsHero.jsx
+ create mode 100644 src/components/Details/DetailsInfo.jsx
+ create mode 100644 src/components/GuestsDropdown.jsx
+ create mode 100644 src/components/Hero/Categories.jsx
+ create mode 100644 src/components/Hero/HeroBackground.jsx
+ create mode 100644 src/components/Hero/HeroContent.jsx
+ create mode 100644 src/components/Hero/HeroSection.jsx
+ create mode 100644 src/components/Hero/SearchBar/DateInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/GuestsInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/LocationInput.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar copy 2.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar copy.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchBar.jsx
+ create mode 100644 src/components/Hero/SearchBar/SearchButton.jsx
+ create mode 100644 src/components/Hero/TitleSection.jsx
+ create mode 100644 src/components/Navbar/Navbar.jsx
+ create mode 100644 src/index.css
+ create mode 100644 src/main.jsx
+ create mode 100644 src/pages/Details.jsx
+ create mode 100644 src/pages/Home.jsx
+ create mode 100644 vite.config copy.js
+ create mode 100644 vite.config.js
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git remote add origin https://github.com/gvnaresshuser/figma-reactnew.git
-error: remote origin already exists.
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git branch -M main
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push -u origin main
-Enumerating objects: 46, done.
-Counting objects: 100% (46/46), done.
+Enumerating objects: 110, done.
+Counting objects: 100% (110/110), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (36/36), done.
-Writing objects: 100% (36/36), 1.97 MiB | 1.04 MiB/s, done.
-Total 36 (delta 15), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (15/15), completed with 7 local objects.
-To https://github.com/gvnaresshuser/figma-react.git
-   78cd992..a4754a0  main -> main
+Compressing objects: 100% (108/108), done.
+Writing objects: 100% (110/110), 7.93 MiB | 1.09 MiB/s, done.
+Total 110 (delta 14), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (14/14), done.
+To https://github.com/gvnaresshuser/figma-reactnew.git
+ * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
 E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
-
 
 https://dashboard.render.com/login
 Google login
@@ -74,7 +154,7 @@ https://github.com/gvnaresshuser/figma-reactnew.git
 Connect
 
 Root Directory
-src
+./
 
 Build Command
 npm install && npm run build
@@ -83,3 +163,20 @@ Publish Directory
 src/dist
 
 Deploy Static Site
+
+
+​
+Update Source
+
+Branch
+The Git branch to build and deploy.
+main
+
+Runtime
+Node
+
+Build Command
+npm install && npm run build
+
+Start Command
+npm run dev

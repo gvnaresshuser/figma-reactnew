@@ -1,43 +1,52 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import AwesomeComponent from "./AwesomeComponent";
 import TravelApp5 from "./TravelApp5";
 
 function App() {
 
-  const [selectedApp, setSelectedApp] = useState(null);
-
-  useEffect(() => {
-
-    const choice = window.prompt(
-      "Enter:\n1 for AwesomeComponent\n2 for TravelApp5"
-    );
-
-    setSelectedApp(choice);
-
-  }, []);
+  const [selectedApp, setSelectedApp] = useState("");
 
   return (
-    <>
+    <div className="min-h-screen bg-black text-white">
 
-      {/* SHOW COMPONENT BASED ON CHOICE */}
+      {/* POPUP */}
+      {selectedApp === "" && (
 
+        <div className="fixed inset-0 flex items-center justify-center bg-black/80 z-50">
+
+          <div className="bg-white text-black p-8 rounded-2xl flex flex-col gap-4 w-[300px]">
+
+            <h1 className="text-2xl font-bold text-center">
+              Select App
+            </h1>
+
+            <button
+              onClick={() => setSelectedApp("1")}
+              className="bg-blue-500 text-white py-2 rounded-xl"
+            >
+              1 - AwesomeComponent
+            </button>
+
+            <button
+              onClick={() => setSelectedApp("2")}
+              className="bg-green-500 text-white py-2 rounded-xl"
+            >
+              2 - TravelApp5
+            </button>
+
+          </div>
+
+        </div>
+
+      )}
+
+      {/* COMPONENTS */}
       {selectedApp === "1" && <AwesomeComponent />}
 
       {selectedApp === "2" && <TravelApp5 />}
 
-      {/* INVALID INPUT */}
-      {selectedApp !== null &&
-        selectedApp !== "1" &&
-        selectedApp !== "2" && (
-
-          <div className="min-h-screen flex items-center justify-center text-2xl">
-            Invalid Choice
-          </div>
-
-        )}
-
-    </>
+    </div>
   );
 }
 
