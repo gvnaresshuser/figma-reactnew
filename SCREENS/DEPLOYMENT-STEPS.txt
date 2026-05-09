@@ -1,0 +1,229 @@
+
+https://github.com/gvnaresshuser/figma-reactnew
+
+echo "# figma-reactnew" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gvnaresshuser/figma-reactnew.git
+git remote add origin https://github.com/gvnaresshuser/figma-reactnew.git
+git push -u origin main
+
+
+
+
+# 1. Create GitHub Repository
+
+Go to:
+
+[GitHub](https://github.com?utm_source=chatgpt.com)
+
+### Create new repository
+
+* Click **New Repository**
+* Repository name:
+
+  ```text
+  travel-app
+  ```
+* Choose:
+
+  * Public
+  * Add README (optional)
+* Click **Create Repository**
+
+---
+
+# 2. Open Your React Project
+
+Open terminal inside your React project folder.
+
+Example:
+
+```bash
+cd E:\your-project-folder
+```
+
+---
+
+# 3. Initialize Git
+
+```bash
+git init
+```
+
+---
+
+# 4. Add All Files
+
+```bash
+git add .
+```
+
+---
+
+# 5. Commit Code
+
+```bash
+git commit -m "Initial commit"
+```
+
+---
+
+# 6. Connect GitHub Repository
+
+Copy repository URL from GitHub.
+
+Example:
+
+```bash
+https://github.com/yourname/travel-app.git
+```
+
+Then run:
+
+```bash
+git remote add origin https://github.com/yourname/travel-app.git
+```
+
+---
+
+# 7. Push Code to GitHub
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+Now your code is on GitHub.
+
+---
+
+# 8. Create Render Account
+
+Go to:
+
+[Render](https://render.com?utm_source=chatgpt.com)
+
+Login using GitHub.
+
+---
+
+# 9. Create Static Site in Render
+
+Inside Render:
+
+* Click **New +**
+* Choose **Static Site**
+
+---
+
+# 10. Connect GitHub Repository
+
+* Select your repository:
+
+  ```text
+  travel-app
+  ```
+
+---
+
+# 11. Configure Build Settings
+
+For Vite React app:
+
+### Build Command
+
+```bash
+npm install && npm run build
+```
+
+### Publish Directory
+
+```text
+dist
+```
+
+---
+
+# 12. Deploy
+
+Click:
+
+```text
+Create Static Site
+```
+
+Render will:
+
+* install packages
+* build app
+* host website
+
+---
+
+# 13. Your Live URL
+
+Render gives URL like:
+
+```text
+https://travel-app.onrender.com
+```
+
+---
+
+# 14. Important for React Routing
+
+If using React Router, create file:
+
+```text
+public/_redirects
+```
+
+Add:
+
+```text
+/* /index.html 200
+```
+
+---
+
+# 15. Future Updates
+
+Whenever you change code:
+
+```bash
+git add .
+git commit -m "updated UI"
+git push
+```
+
+Render automatically redeploys.
+
+---
+
+# 16. Optional `.gitignore`
+
+Ensure this exists:
+
+```text
+node_modules
+dist
+```
+
+---
+
+# 17. Check Build Locally Before Deploy
+
+```bash
+npm run build
+```
+
+If successful:
+
+```text
+✓ built successfully
+```
+
+then Render deployment will usually work properly.
