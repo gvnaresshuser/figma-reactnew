@@ -180,3 +180,38 @@ npm install && npm run build
 
 Start Command
 npm run dev
+
+============================================
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App copy 2.jsx', LF will be replaced by CRLF the next time Git touches it
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SCREENS/DEPLOYMENT-STEPS-OUTPUT.txt
+        new file:   src/App copy 2.jsx
+        modified:   src/App.jsx
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "fixed popup"
+[main ea4ead3] fixed popup
+ 3 files changed, 191 insertions(+), 41 deletions(-)
+ create mode 100644 src/App copy 2.jsx
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.54 KiB | 2.54 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/gvnaresshuser/figma-reactnew.git
+   7eef859..ea4ead3  main -> main
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>

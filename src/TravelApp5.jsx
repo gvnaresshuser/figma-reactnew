@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
-
+import "./TravelApp2.css";
 import { User, Calendar, Settings, MapPin } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineDisconnect } from "react-icons/ai";

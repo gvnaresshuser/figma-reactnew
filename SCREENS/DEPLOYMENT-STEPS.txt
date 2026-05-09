@@ -227,3 +227,11 @@ If successful:
 ```
 
 then Render deployment will usually work properly.
+
+
+AFTER ANY CHANGES TO FILES IN THE PROJECT..DO THIS
+
+
+git add .
+git commit -m "fixed popup"
+git push
