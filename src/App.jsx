@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import AwesomeComponent from "./AwesomeComponent";
 import TravelApp5 from "./TravelApp5";
+import TravelApp6 from "./TravelApp6";
 
 function App() {
 
@@ -35,6 +36,13 @@ function App() {
               2 - TravelApp5
             </button>
 
+            <button
+              onClick={() => setSelectedApp("3")}
+              className="bg-red-500 text-white py-2 rounded-xl"
+            >
+              3 - TravelApp6
+            </button>
+
           </div>
 
         </div>
@@ -45,6 +53,8 @@ function App() {
       {selectedApp === "1" && <AwesomeComponent />}
 
       {selectedApp === "2" && <TravelApp5 />}
+
+      {selectedApp === "3" && <TravelApp6 />}
 
     </div>
   );
