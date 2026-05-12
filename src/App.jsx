@@ -3,6 +3,7 @@ import { useState } from "react";
 import AwesomeComponent from "./AwesomeComponent";
 import TravelApp5 from "./TravelApp5";
 import TravelApp6 from "./TravelApp6";
+import TravelAppFlutter from "./TravelAppFlutter";
 
 function App() {
 
@@ -43,6 +44,13 @@ function App() {
               3 - TravelApp6
             </button>
 
+            <button
+              onClick={() => setSelectedApp("4")}
+              className="bg-purple-900 text-white py-2 rounded-xl"
+            >
+              4 - TravelAppFlutter
+            </button>
+
           </div>
 
         </div>
@@ -55,6 +63,8 @@ function App() {
       {selectedApp === "2" && <TravelApp5 />}
 
       {selectedApp === "3" && <TravelApp6 />}
+
+      {selectedApp === "4" && <TravelAppFlutter />}
 
     </div>
   );

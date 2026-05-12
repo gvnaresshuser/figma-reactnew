@@ -226,3 +226,42 @@ https://www.figma.com/design/Ui9xmqM4aGfQbJHj6PR8I1/Travel-App--Community-?node-
 
 2-TravelApp5
 https://www.figma.com/design/4zIRy3GEwII1bysHJNsZ4E/Travelers-%7C-Landing-Page---Mobile-App--Community-?node-id=315-21&p=f&t=0aZNkspCRJXZ9RoL-0
+
+
+12-05-2026:
+===========
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git add .
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/TravelApp.jsx', LF will be replaced by CRLF the next time Git touches it
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SCREENS/DEPLOYMENT-STEPS-OUTPUT.txt
+        modified:   src/App.jsx
+        new file:   src/TravelApp.jsx
+        new file:   src/TravelApp6.jsx
+
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git commit -m "added wandr travel app"
+[main 33858e9] added wandr travel app
+ 4 files changed, 976 insertions(+), 1 deletion(-)
+ create mode 100644 src/TravelApp.jsx
+ create mode 100644 src/TravelApp6.jsx
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 8.95 KiB | 539.00 KiB/s, done.
+Total 8 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 5 local objects.
+To https://github.com/gvnaresshuser/figma-reactnew.git
+   43ae9f7..33858e9  main -> main
+
+E:\MURALI\REACT-JS-CRASH-COURSE\figma-react>
